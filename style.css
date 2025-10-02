@@ -2186,7 +2186,8 @@ tbody .r10, tbody .r20, tbody .r50, tbody .r99 {color:#bcd68c;}
 .wii				{height:28px; width:28px; background: url('https://gazellegames.net/static/styles/blue_ambrose/images/caticons/wii.png')}
 .wiivc				{height:28px; width:28px; background: url('https://gazellegames.net/static/styles/blue_ambrose/images/caticons/wiivc.png')}
 .wiiware 			{height:28px; width:28px; background: url('https://gazellegames.net/static/styles/blue_ambrose/images/caticons/wiiware.png')}
-.windows			{height:28px; width:28px; background: url('https://gazellegames.net/static/styles/blue_ambrose/images/caticons/windows.png')}
+/*.windows			{height:28px; width:28px; background: url('../game_room/images/caticons/windows.png')} /*Dieslrae - addition for #2: "Windows caticon is using Win7 instead of Win11 icon" by TripleR */ 
+.windows			{height:28px; width:28px; background: url('https://gazellegames.net/static/styles/game_room/images/caticons/windows.png')} 
 .windows95			{height:28px; width:28px; background: url('https://gazellegames.net/static/styles/blue_ambrose/images/caticons/windows95.png')}
 .windowsxp			{height:28px; width:28px; background: url('https://gazellegames.net/static/styles/blue_ambrose/images/caticons/windowsxp.png')}
 .wonderswan			{height:28px; width:28px; background: url('https://gazellegames.net/static/styles/blue_ambrose/images/caticons/wonderswan.png')}
@@ -5309,4 +5310,13 @@ form#tag_add_form input[type="submit"] {
 #tags_add_note {
     font-size: smaller;
     text-align: left;
+}
+
+/*Dieslrae - addition for fix #1: "Tags group is bunched up after tag system overhaul update" by Sturm */ 
+#group_tags .tag_type_header {
+    font-weight: bold; /* Makes tag headers bold for easier readability */
+}
+
+#group_tags .group_tag {
+    margin: 2px 0; /* Adds spacing between tags to improve usability */
 }
