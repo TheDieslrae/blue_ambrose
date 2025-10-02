@@ -1077,7 +1077,7 @@ tr.likes td {text-align: left !important;}					/*Left aligns the like/dislike te
 
 table.forum_index {											/* Sets background of main forum page */
     background: url('https://gazellegames.net/static/styles/blue_ambrose/images/companioncube.png') repeat-y scroll bottom right !important;
-	background-size: 100% auto; /*Dieslrae fix #4 - typo causing forum index sizing to be improper and losing jump to last unread arrow on some threads. */
+	ackground-size: 100% auto;
     border: 1px solid #036;}
 
 #forums #content .thin table {								/*Background of forum sections*/
@@ -1182,7 +1182,7 @@ table.forum_index {											/* Sets background of main forum page */
 .last_read {
 	width: 15px;
 	height: 15px;
-	background: url('https://gazellegames.net/static/styles/blue_ambrose/images/images/go_last_read.png') no-repeat center center;
+	background: url('https://gazellegames.net/static/styles/blue_ambrose/images/go_last_read.png') no-repeat center center;
 	margin-left: 5px;
 	margin-left: 5px;}
 .last_read a {
