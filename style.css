@@ -1649,8 +1649,8 @@ tbody .r10, tbody .r20, tbody .r50, tbody .r99 {color:#bcd68c;}
 	background-position:center center;}
 
 .torrent_table tr.group_torrent td span, #torrent_table tr.group_torrent td span{
-	margin-left:18px;
-	color:#fff;}
+	margin-left:18px;}
+	/*color:#fff;}*/ /*Dieslrae - subtraction for fix #5: "version portion of torrent is different color than rest of text" by ggnwarlan */ 
 
 .torrent_table tr.group_torrent a, #torrent_table tr.group_torrent a{
 	color:white;
@@ -5294,7 +5294,6 @@ td.calendar-day-np {
 /*td a { word-break: break-all;}
 td a { word-break: break-all;}*/
 
-
 /*** Tag adding form ***/
 form#tag_add_form {
     margin-top: 1em;
@@ -5319,10 +5318,9 @@ form#tag_add_form input[type="submit"] {
 }
 
 /*Dieslrae - addition for fix #1: "Tags group is bunched up after tag system overhaul update" by Sturm */ 
-#group_tags .tag_type_header {
-    font-weight: bold; /* Makes tag headers bold for easier readability */
-}
+#group_tags {padding: 3px 0px 10px 6px;} /* Match .body sidebar spacing for group_tag */
+#add_tags_link {padding-left: 6px;} /* Add 6px left padding in front of [add] button to match tags spacing */
+.box_tags {padding-bottom: 6px;} /* Add 6px bottom padding under [add] button to match .body sidebar spacing */
+#group_tags .tag_type_header {font-weight: bold;} /* Makes tag headers bold for easier readability */
 
-#group_tags .group_tag {
-    margin: 2px 0; /* Adds spacing between tags to improve usability */
-}
+.theme_collections {padding: 3px 0px 10px 6px;} /* Match .body sidebar spacing for theme_collections */
