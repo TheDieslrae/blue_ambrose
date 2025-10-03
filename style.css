@@ -1649,8 +1649,8 @@ tbody .r10, tbody .r20, tbody .r50, tbody .r99 {color:#bcd68c;}
 	background-position:center center;}
 
 .torrent_table tr.group_torrent td span, #torrent_table tr.group_torrent td span{
-	margin-left:18px;
-	color:#fff;}
+	margin-left:18px;}
+	/*color:#fff;}*/ /*Dieslrae - subtraction for fix #5: "version portion of torrent is different color than rest of text" by ggnwarlan */ 
 
 .torrent_table tr.group_torrent a, #torrent_table tr.group_torrent a{
 	color:white;
@@ -5293,7 +5293,6 @@ td.calendar-day-np {
 /*Dieslrae - subtraction for fix #3: "Blue Ambrose places line breaks within words" by weser */ 
 /*td a { word-break: break-all;}
 td a { word-break: break-all;}*/
-
 
 /*** Tag adding form ***/
 form#tag_add_form {
