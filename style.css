@@ -2498,21 +2498,21 @@ td.cats_col {
      width: 20px;
      background: url("https://gazellegames.net/static/styles/blue_ambrose/images/crossn.png") no-repeat left center;}
 
-/****Image Gallery****/
-.profile .box_art_gallery .gallery {
+/****Image Gallery****/  /*Dieslrae - Fix #6: Update to have .gallery apply globally (not just within .profile .box_art_gallery), so it works on wiki pages too */
+/*.profile .box_art_gallery*/ .gallery {
         margin-left: 3px;
         display: inline-block;}
 
-.profile .box_art_gallery .gallery_slot {
+/*.profile .box_art_gallery*/ .gallery_slot {
         overflow: hidden;}
 
-.profile .box_art_gallery .gallery_main_slot {
+/*.profile .box_art_gallery*/ .gallery_main_slot {
         float: left;
         width: 100%;
         height: auto;
         max-height: 600px;}
 
-.profile .box_art_gallery .gallery_row {
+/*.profile .box_art_gallery*/ .gallery_row {
         padding: 0;
         margin: auto;
         position: relative;
@@ -2520,14 +2520,14 @@ td.cats_col {
         max-height: 150px;
         white-space: nowrap;
         overflow: hidden;}
-.profile .box_art_gallery .gallery_small_slot {
+/*.profile .box_art_gallery*/ .gallery_small_slot {
         display: inline-block;
         max-height: 150px;
-	margin: 1px;}
-.profile .box_art_gallery .large_row .gallery_small_slot {width: 23%;}
-.profile .box_art_gallery .small_row .gallery_small_slot {width: 24%; margin: 3px;}
-.profile .gallery_small_slot img {display: block;}
-.profile .box_art_gallery .gallery_small_slot.selected {border: 1px solid white;}
+	    margin: 1px;}
+/*.profile .box_art_gallery*/ .large_row .gallery_small_slot {width: 23%;}
+/*.profile .box_art_gallery*/ .small_row .gallery_small_slot {width: 24%; margin: 3px;}
+/*.profile*/ .gallery_small_slot img {display: block;}
+/*.profile .box_art_gallery*/ .gallery_small_slot.selected {border: 1px solid white;}
 
 /* ******************************* */
 /* **********COLLECTIONS********** */
