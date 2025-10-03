@@ -1166,15 +1166,15 @@ table.forum_index {											/* Sets background of main forum page */
 
 #forums .user_title {
      display: block;}
-
-#forums .username {
+/*Dieslrae - subtraction for fix #4: "Forum page layout of userinfo_username area is different than other pages" by Dieslrae */ 
+/*#forums .username {
      padding-right: 5px;}
 
 #forums .username_badges img {
      max-height: 14px;
      vertical-align: middle;
      padding: 0 1px;
-     margin-top: -2px;}
+     margin-top: -2px;}*/
 
 #forums .forum_post .colhead_dark div[style="float:left;"] input {
      vertical-align: text-bottom;}
@@ -2191,7 +2191,7 @@ tbody .r10, tbody .r20, tbody .r50, tbody .r99 {color:#bcd68c;}
 .wii				{height:28px; width:28px; background: url('https://gazellegames.net/static/styles/blue_ambrose/images/caticons/wii.png')}
 .wiivc				{height:28px; width:28px; background: url('https://gazellegames.net/static/styles/blue_ambrose/images/caticons/wiivc.png')}
 .wiiware 			{height:28px; width:28px; background: url('https://gazellegames.net/static/styles/blue_ambrose/images/caticons/wiiware.png')}
-/*.windows			{height:28px; width:28px; background: url('../game_room/images/caticons/windows.png')} /*Dieslrae - addition for #2: "Windows caticon is using Win7 instead of Win11 icon" by TripleR */ 
+/*.windows			{height:28px; width:28px; background: url('../game_room/images/caticons/windows.png')} /*Dieslrae - addition for fix #2: "Windows caticon is using Win7 instead of Win11 icon" by TripleR */ 
 .windows			{height:28px; width:28px; background: url('https://gazellegames.net/static/styles/game_room/images/caticons/windows.png')} 
 .windows95			{height:28px; width:28px; background: url('https://gazellegames.net/static/styles/blue_ambrose/images/caticons/windows95.png')}
 .windowsxp			{height:28px; width:28px; background: url('https://gazellegames.net/static/styles/blue_ambrose/images/caticons/windowsxp.png')}
