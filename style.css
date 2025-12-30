@@ -581,7 +581,7 @@ div.sidebar #event_div {
 #stats_seeding {
 	color:#C7EB00;
 	font-family:Arial;
-	width:160px;}
+	width:150px;} /*Dieslrae - update for fix #10: width of 2 columns should be 150px max (not 160px) to fit within 300px box.*/
 #stats_leeching {
 	color:#C7EB00;
 	font-family:Arial;
@@ -589,12 +589,12 @@ div.sidebar #event_div {
 #stats_gold {
 	color:#C7EB00;
         font-family:Arial;
-	margin-top: 10px;
-	width: 160px;}
+	/*margin-top: 10px;*/ /*Dieslrae - update for fix #10: remove to fix formatting.*/
+	width: 150px;} /*Dieslrae - update for fix #10: width of 2 columns should be 150px max (not 160px) to fit within 300px box.*/
 #stats_ratio, #stats_share_score {
 	color:#7FB7D3;
-	font-family:Arial;
-	margin-top:10px;}
+	font-family:Arial;}
+	/*margin-top:10px;}*/ /*Dieslrae - update for fix #10: remove to fix formatting.*/
 #stats_share_score {
 	margin-left: 10px;}
 #stats_hnr {
@@ -606,11 +606,11 @@ div.sidebar #event_div {
 	color:#7FB7D3;
 	font-family:Arial;
 	clear:left;
-	width:160px;}
+	width:150px;}/*Dieslrae - update for fix #10: width of 2 columns should be 150px max (not 160px) to fit within 300px box.*/
 #stats_irc {
 	color:#C7EB00;
-	font-family:Arial;
-	margin-top:10px;}
+	font-family:Arial;}
+	/*margin-top:10px;}*/ /*Dieslrae - update for fix #10: remove to fix formatting.*/
 #stats_seeding a:link, #stats_leeching a:link {
 	color:#7FB7D3;
 	font-family:Arial;
