@@ -595,6 +595,8 @@ div.sidebar #event_div {
 	color:#7FB7D3;
 	font-family:Arial;}
 	/*margin-top:10px;}*/ /*Dieslrae - update for fix #10: remove to fix formatting.*/
+#stats_donor_points {
+  margin-right: 40px;} /*Dieslrae - update for fix #10: avoids having donor points & ratio on the same line.*/
 #stats_share_score {
 	margin-left: 10px;}
 #stats_hnr {
@@ -5340,4 +5342,10 @@ form#tag_add_form input[type="submit"] {
 .donor_badge_icon.tooltip {
   margin: 0;
   border: none;
+}
+
+/*Dieslrae - addition for fix #12: group titles wrap and overlap into the linkbox groupoptions*/
+#display_name {
+  height: unset;
+  line-height: unset;
 }
