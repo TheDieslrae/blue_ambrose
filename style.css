@@ -5414,12 +5414,23 @@ td.ost_groups ul li a:hover {
     color: var(--lightBlue);
     text-align: right;}
 
-/*Dieslrae - fix #15 - Add specific selector for tag input box to extend the width as much as possible to allow more tags to be visible.*/
+/*Dieslrae - fix #15 - Add specific tag input boxes to extend the width as much as possible to allow more tags to be visible.*/
 #add_tags_input > input {												/*Input boxes (for tag entry on a group page)*/
 	background:url("https://gazellegames.net/static/styles/blue_ambrose/images/BlueGradBtn.png") repeat-x scroll;
 	border:1px solid #999999;
 	color:#FDFDFD;
-	width: 200px;
+	width: 99%;
+	box-sizing: border-box;
+	padding-left:2px;}
+input:hover{
+	border:1px solid #fff;}
+
+#tags_div > input {												/*Input boxes (for tag entry on upload page)*/
+	background:url("https://gazellegames.net/static/styles/blue_ambrose/images/BlueGradBtn.png") repeat-x scroll;
+	border:1px solid #999999;
+	color:#FDFDFD;
+	width: 99%;
+	box-sizing: border-box;
 	padding-left:2px;}
 input:hover{
 	border:1px solid #fff;}
