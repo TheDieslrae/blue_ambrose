@@ -1,6 +1,7 @@
 @import url(https://gazellegames.net/static/styles/game_room/caticons.css);
 @import url(https://gazellegames.net/static/styles/game_room/webLinks.css);
 
+
 /* ************************** */
 /* **********Global********** */
 /* ************************** */
@@ -31,8 +32,8 @@ body {
 	height: 100%;}
 
 h2 {												/*Header at top of most pages (wiki, requests, etc*/
-	height:48px;
-	line-height:48px;
+	/*height:48px;
+	line-height:48px;			*/ /*Dieslrae - Fix #14 Commenting out height and line-height to fix long lines overflowing the header area (in forums, specifically, but likely elsewhere...too)*/
 	color:#7FB7D3;									/*Light blue*/
 	padding-left:15px;
 	border-bottom:solid 2px #314f6d;}				/*Medium blue bottom border*/
@@ -5349,3 +5350,76 @@ form#tag_add_form input[type="submit"] {
   height: unset;
   line-height: unset;
 }
+
+
+/*Dieslrae - addition for fix #13: new 2026 OST dropdown fixes*/
+/*This is copied from lines 760-818 of torrentsGames.css*/
+td.ost_groups {
+    position: relative;
+    anchor-name: --ost-popover-trigger;
+}
+
+td.ost_groups ul {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    inset: auto;
+    white-space: nowrap;
+    width: fit-content;
+    list-style: none;
+    max-width: 46em;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 15em;
+    scrollbar-width: thin;
+    top: anchor(--ost-popover-trigger bottom);
+    left: anchor(--ost-popover-trigger left);
+    background-color: #0E1720;
+    border: 0;}
+
+td.ost_groups ul.flow-left {
+    left: auto;
+    right: anchor(--ost-popover-trigger right);}
+
+@media screen and (max-width: 800px) {
+    td.ost_groups ul {
+        max-width: 23em;
+    }
+}
+
+td.ost_groups ul li {
+    background-color: var(--mediumBlue);
+    border-bottom: 1px solid var(--darkBlue);
+    padding: 0.4em 1em !important;}
+
+td.ost_groups ul li:hover {
+    background-color: var(--darkBlue);
+    cursor: pointer;}
+
+td.ost_groups ul li a {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;}
+
+td.ost_groups ul li a:hover {
+    text-decoration: none;
+    color: white;}
+
+.ost_dropdown_indicator {
+    position: absolute;
+    right: 1.1em;
+    bottom: 0.3em;
+    font-size: smaller;
+    color: var(--lightBlue);
+    text-align: right;}
+
+/*Dieslrae - fix #15 - Add specific selector for tag input box to extend the width as much as possible to allow more tags to be visible.*/
+#add_tags_input > input {												/*Input boxes (for tag entry on a group page)*/
+	background:url("https://gazellegames.net/static/styles/blue_ambrose/images/BlueGradBtn.png") repeat-x scroll;
+	border:1px solid #999999;
+	color:#FDFDFD;
+	width: 200px;
+	padding-left:2px;}
+input:hover{
+	border:1px solid #fff;}
