@@ -21,8 +21,8 @@ body {
 	min-width: 850px;
 /*Dieslrae - addition for fix #3: "Blue Ambrose places line breaks within words" by weser */ 
 	white-space: normal;
-	word-break: normal;
-	overflow-wrap: normal;
+	word-break: break-word; /*Dieslrae - update for fix #16: "Long URLs overflow in game comments in Chrome." by freedomocracy. FROM: normal/normal TO: break-word/anywhere */
+	overflow-wrap: anywhere;
 }
 #wrapper {											/*General content box on all pages*/
 	position: relative;
