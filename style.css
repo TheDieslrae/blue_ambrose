@@ -21,8 +21,8 @@ body {
 	min-width: 850px;
 /*Dieslrae - addition for fix #3: "Blue Ambrose places line breaks within words" by weser */ 
 	white-space: normal;
-	word-break: break-word; /*Dieslrae - update for fix #16: "Long URLs overflow in game comments in Chrome." by freedomocracy. FROM: normal/normal TO: break-word/anywhere */
-	overflow-wrap: anywhere;
+	word-break: normal; 
+	overflow-wrap: normal;
 }
 #wrapper {											/*General content box on all pages*/
 	position: relative;
@@ -1519,7 +1519,11 @@ tbody .r10, tbody .r20, tbody .r50, tbody .r99 {color:#bcd68c;}
 
 #torrents .body ul {margin-left:20px;}
 
-#torrents #content .main_column .forum_post td.body {color:#fff;}
+#torrents #content .main_column .forum_post td.body {
+	color:#fff;
+	overflow-wrap: anywhere; /*Dieslrae - added overflow-wrap and word-break for fix #16: "Long URLs overflow in game comments in Chrome." by freedomocracy. */
+	word-break: break-word;
+}
 
 #torrents .main_column .forum_post td.avatar {
         min-height: 150px;}
